@@ -1,5 +1,109 @@
 html,
 body
 {
-    background-color:#fdc;
+    background-color:#fec;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+a
+{
+    text-decoration:none;
+    color: #885A8B;
+}
+
+.title > a > h2
+{
+    margin:0px;
+    font-size:2.4em;
+}
+.title > a > h3
+{
+    margin:0px;
+    color:#888;
+}
+
+.title > a:hover > h2
+{
+    color:#551A8B;
+}
+.title > a:hover > h3
+{
+    color:#555;
+}
+
+.title
+{
+    margin:auto;
+    margin-top:50px;
+    text-align:center;
+    width:400px;
+    padding:10px;
+    background-color:#fff;
+    border-radius:10px;
+}
+
+.bar
+{
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:10px;
+    width:400px;
+}
+
+.bar > a
+{
+    display:inline-block;
+    text-align:center;
+    border:solid;
+    width:50px;
+    height:50px;
+    padding:10px;
+    border-radius:10px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:30pt;
+}
+
+.bar > .ui
+{
+    background-color:#acf;
+    color:#22235a;
+}
+
+.bar > .v
+{
+    background-color:#a9d;
+    color:#22235a;
+}
+
+.bar > .a
+{
+    background-color:#eef;
+    color:#22235a;
+}
+
+.bar > .fp
+{
+    background-color:#b9d;
+    color:#22235a;
+}
+
+.bar > .ui:hover
+{
+    background-color:#89f;
+}
+
+.bar > .v:hover
+{
+    background-color:#96d;
+}
+
+.bar > .a:hover
+{
+    background-color:#ccf;
+}
+
+.bar > .fp:hover
+{
+    background-color:#a7e;
 }
