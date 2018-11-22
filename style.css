@@ -172,7 +172,45 @@ iframe
     border-width:3px;
 }
 
-h3 + a
+.label
+{
+	display:inline-block;
+	padding:3px 10px;
+	margin:0px -30px 0px 40px;
+	border-radius:6px;
+	color:white;
+	min-width:80px;
+	text-align:center;
+}
+
+.technical
+{
+	background-color:#df7512;
+}
+
+.professional
+{
+	background-color:#1275df;
+}
+
+ul
+{
+	list-style:none;
+	display:table;
+	border-spacing:14px;
+}
+
+ul > li
+{
+	display:table-row;
+}
+
+ul > li > *
+{
+	display:table-cell;
+}
+
+.label + a
 {
 	float:right;
 }
