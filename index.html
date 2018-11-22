@@ -8,17 +8,194 @@
     <title>Nick's Portfolio</title>
 </head>
 <div class="title">
-<a href="index.html"><h2>MULTIMEDIA</h2>
-<h3>The collected works of Nicholas Mulrooney</h3></a>
+<a href="index.html"><h2>Software Engineering</h2>
+<h3>As recounted and reflected on by Nicholas Mulrooney</h3></a>
 
-<div class="bar">
-    <a href="ui.html" class="ui">UI</a>
-    <a href="video.html" class="v">V</a>
-    <a href="animation.html" class="a">A</a>
-    <a href="finalproject.html" class="fp">FP</a>
-</div>
 </div>
 <body>
-    
+    <div class="body">
+		<div class="section" id="Contents">
+			<h3>Table of Contents</h3>
+			<p><a href="#Overview">Project Overview</a></p>
+			<p><a href="#Sprint1">Sprint 1 - Getting Started</a></p>
+			<p><a href="#Sprint2">Sprint 2 - Mobility</a></p>
+			<p><a href="#Insights">Sprint 2 - Insights</a></p>
+			<p><a href="#Sprint3">Sprint 3 - Learning Laravel</a></p>
+			<p><a href="#Sprint4">Sprint 4 - Transfer to Laravel</a></p>
+			<p><a href="#Sprint5">Sprint 5 - Integrations</a></p>
+			<p><a href="#Sprint6">Sprint 6 - Final Pass</a></p>
+			<p><a href="#Designs">Sprint 6 - Applied Design</a></p>
+			<p><a href="#Appendix">Appendix: Agility Elsewhere</a></p>
+		</div>
+
+		<div class="section" id="Overview">
+			<h3>Project Overview</h3><a href="#">Back to top</a>
+			<p>This project was a group project conducted over sixteen weeks, to produce a web application described as a "semester tracker". Over this
+			time we managed to work with our clients to come up with a more explicit set of requirements and features to try to meet, most of which we successfully implemented.
+			Our final product can be viewed <a href="http://mariadb.ict.op.ac.nz/~se18s2_01/semester-tracker-dunedin-thunder-fingers/public/">here</a>.</p>
+			<div class="imgwrapper">
+				<a href="http://mariadb.ict.op.ac.nz/~se18s2_01/semester-tracker-dunedin-thunder-fingers/public/">
+					<img src="img/evidence 4.png"></img>
+				</a>
+			</div>
+			<p>The main technology we used for this project is a web development framework called <a href="https://laravel.com/">Laravel</a>, which mostly
+			relies on PHP, HTML, CSS and Javascript, but does require some understanding of SQL for database calls. We used this at the recommendation of
+			our lecturers, who also acted as our clients.</p>
+			<p>Overall I'd say that this project was a success, both in terms of being able to produce a functional product, and in terms of how much we
+			all learned, as individuals and as a group. We met the course's primary objective of learning how to work in the Agile framework of development, and
+			even picked up a few new skills along the way.</p>
+		</div>
+		
+		<div class="section" id="Sprint1">
+			<h3>Sprint 1 - Getting Started</h3><a href="#">Back to top</a>
+			<p>By design, this sprint was not especially demanding, whether you look at it from a technical or professional perspective. We only had five stories to complete between us (which we could split evenly between our group of five), and the only technologies we used were HTML and CSS. My story for this sprint was perhaps the least demanding of all: on paper, all I had to do was get our site hosted on Github Pages, which was a matter of reading a short tutorial and clicking like three links. 
+			</p>
+			<p>Because of this I extended some extra effort towards writing some basic CSS early on in the sprint, so that the site was more presentable when the time came to have our work reviewed. As the principles of Agile Development tell us, our highest priority should be the "early and continuous delivery of valuable software", and form is an (often underappreciated) element of function-- it's much harder to use a site that is hard to read or navigate. 
+			</p>
+			<p>Michael also added the Bootstrap library to our repertoire, which influenced the HTML tags and classes that the other three members used. It was this CSS file that I modified, mostly to fix some padding. I also worked on the footer, following an <a href="https://matthewjamestaylor.com/bottom-footer">online guide</a> I found to keep it presentable. Finally, I did delve into the HTML of my other group mates' pages on the last day, to fix some minor positioning issues caused by slight differences in div tag nesting. In the industry, something similar to this process would happen during pull requests, before any changes were approved.
+			</p>
+			<div class="imgwrapper">
+				<img src="img/evidence 5.png"></img>
+			</div>
+		</div>
+		
+		<div class="section" id="Sprint2">
+			<h3>Sprint 2 - Mobility</h3><a href="#">Back to top</a>
+			<p>For this sprint, I was kept on CSS duty: this time, I added code for responsive design, so that the site could be used on mobile devices. As far as the principles of Agile development are concerned, I think this was a fairly effective deployment choice: since I was the one who started the CSS on the previous sprint, I had a firmer idea of where to take things than another developer would have, which translated directly into faster and higher-quality work. This was also an early expression of the 11th principle of Agile development: "The best architectures, requirements, and designs emerge from self-organising teams." Since the people calling the shots were the same as the people "on the ground", as it were, we were able to make intelligent ticket assignments based on our previous work.
+			</p>
+			<p>From a learning standpoint, we had Johnny (who had basically no experience with CSS) take over on the base CSS, to create a more "final" look than what I'd written during the last sprint. This was a learning experience for me, too, since I was the main person he consulted for advice during this sprint. (See <a href="#Insights">Sprint 2 - Insights</a> for a more in-depth reflection on this.) I think this experience will help me in the future, whether I’m training another team member again or I end up being the one who gets trained.</p>
+
+		</div>
+		
+		<div class="section" id="Insights">
+			<h3>Sprint 2 - Insights</h3><a href="#">Back to top</a>
+			<p>On this sprint, I faced issues relating to interpersonal collaboration as a whole. Unlike the strictly technical challenges and mistaken assumptions of the last sprint, these challenges were a fair bit more frustrating, and I suppose subjective insofar as they may not have been so challenging for another person-- although I'm sure that person would have encountered problems with another aspect of our team's workflow.</p>
+			<p>Without beating too much around the bush, these challenges mostly centred around a particular teammate, whose understanding of the very fundamentals of working with Git-- pushing at the end of every work session, and then pulling at the beginning of every work session thereafter-- transpired to be surprisingly lacking. This resulted in a number of unplanned and unwanted rollbacks following his latest pull request, despite my efforts to resolve as many as I could before approving it.</p>
+			<p>While rationally I'm sure that someone more skilled with Git than <em>I</em> am could have avoided a whole lot of hassle around these rollbacks, a part of me couldn't help feeling frustrated. It was easy for me to feel that almost all of this work could have been avoided if the teammate responsible had just understood Git slightly better, a perception that led to my more uncharitable feeling: that I'd been forced to take on a load of extra "meta-work" on top of dealing with my own features and code, and the "meta-work" of managing and pushing that.</p>
+			<p>As much as I recognise that these feelings were unfair and, moreover, definitely not worth acting on, I think they constituted a very real and somewhat difficult situation that I believe I managed to triumph over. I was able to kludge together a way to fix immediate problem of having lost the stuff that had been rolled back, and together we were even able identify and correct the underlying reason for this problem, by sorting out when he should push and pull from Git. This was hugely helpful going forwards, as this teammate never had these problems again.</p>
+			<p>My own mistake regarding Git this sprint was being somewhat liberal with pull requests. I didn't realise that the intent was for another person to sign off on changes before committing to the merge, and I was personally eager to test out the site on an actual mobile device rather than just resizing my window. I think in future I'll use other hosting means to test out the site, such as using the pages I have set up on a couple of the gitlab repositories I have access to, instead of simply merging my work to the master branch when I've achieved what seems to be base functionality.</p>
+
+		</div>
+		
+		<div class="section" id="Sprint3">
+			<h3>Sprint 3 - Learning Laravel</h3><a href="#">Back to top</a>
+			<p>This sprint was more technically demanding than the last two, since it involved learning an entirely new "technology"-- the Laravel framework for PHP, which makes a pretty significant departure from the PHP that I'd used up until this point in Web 2. On the other hand, the increase in technical demand did not reflect an increase in output, with only one major feature needing completion: implementing an "Edit Semesters" page, one of the "load-bearing" aspects of the finished application on which many of our client's user stories would rest.
+			</p>
+			<div class="imgrowwrapper">
+				<div class="imgrow two">
+					<a href="img/evidence 2-a.png"><img src="img/evidence 2-a.png"></img></a>
+					<a href="img/evidence 2-b.png"><img src="img/evidence 2-b.png"></img></a>
+				</div>
+			</div>
+			<p>In retrospect, I think this sprint marked the beginning of a sort of "competence split" between members of our group. Michael and I took on the responsibility for writing the version of the Semester tool that we eventually implemented on the live site, which inherently gave us experience working with Laravel itself, and meant we could maintain our pace on the next few sprints (all of which used heavy amounts of Laravel). The other three members of our group had mixed results in the next three sprints-- Joe had no trouble with even quite technically challenging features, but both Josh and Johnny struggled to make much headway in Laravel on their own, which I think has its roots in their lack of contribution during this sprint.
+			</p>
+			<p>If I were to take a leadership role on a similar project in the future, I think I would focus more on making sure that <em>every</em> member of my team was at least comfortable with the language/framework we were using, especially early on in the project. This would
+			make it much easier to assign tickets later on in the project, and just straight up increase the amount of work we could get done as a team in general.
+			</p>
+		</div>
+		
+		<div class="section" id="Sprint4">
+			<h3>Sprint 4 - Transfer to Laravel</h3><a href="#">Back to top</a>
+			<p>This sprint started off with a thorough exercise in efficiently assigning user stories to developers. The overarching plan was for this sprint to be the one where we ported all of our existing functionality over to Laravel. As a secondary objective, we also wanted to implement the backbone for the features that we needed Laravel for.
+			</p>
+			<p>Since I was the one member of the group without an “original page” from Sprint 1 to port over, I took on the lion’s share of the new features in Laravel. Specifically, adding Assignment and Course functionality on top of the Semester functions that we’d added last sprint. On a technical level, this was mostly a matter of repeating the work we had done on the Semester page, modulo variable names and the various fields not shared between the three tables. I also worked on the .blade.php file for the Creator Information, since that page’s original creator (Joe) had been assigned to work on a login system with admin privileges. 
+			</p>
+			<p>Overall this was reasonably simple: I did run into a few issues when it came to splitting the information boxes on the Creator Information page into two columns, because it transpired that Joe had formatted them as CSS tables to begin with and I was trying to use CSS tables to put them in a 2x3 grid. I managed to solve the problem by refactoring Joe’s CSS to remove the nesting table problem, while at the same time preserving the look of the boxes (which I thought was good UX design). The mobile formatting was another problem entirely, one that I eventually decided to add as a new story for a future sprint.
+			</p>
+			<h4>Maximising Work Not Done</h4>
+
+			<p>As far as professional proficiency goes, the main attraction was definitely at the beginning of the sprint, when we were organizing which stories we wanted to complete. Part of maximising the amount of work not done-- a core tenet of the Agile philosophy-- is recognizing when multiple stories can be completed simultaneously. 
+			</p>
+<p>For example, in this sprint we wanted to <strong>a)</strong>  port all of our pages over to Laravel, and <strong>b)</strong>  update the formatting for some of these pages. If we had left the tickets under <strong>b)</strong> for another sprint, then all of our formatting work for this sprint would have been wasted: so, Michael and I made sure to integrate those tickets into this sprint, giving them to the people already working on porting those pages over. (For example, we assigned Michael the "port Course Information to Laravel" and "split Course Information into two columns" tickets, since they applied to the same page.)
+
+		</div>
+		
+		<div class="section" id="Sprint5">
+			<h3>Sprint 5 - Integrations</h3><a href="#">Back to top</a>
+			<p>In this sprint we ironed out the features that we hadn’t been able to fit in the last sprint, and the bugs that we hadn’t been able to solve in time for release. My task required an understanding of both Laravel and database design: I had to implement a way to bind courses to semesters, so that each course’s relevant dates could later be calculated relative to the semester’s dates. This way, a course’s final exam (for example) could be defined as starting on Week 16, instead of a specific date that the lecture would have to update every semester.
+			</p>
+			<p>Because of my experience with databases from Systems Analysis last year and Databases 2 earlier this year, I was immediately able to recognise that the relationship between courses and semesters was many-to-many, and therefore that I needed to add a joining table to our database. I called this “Courseattachments”, since it defined which courses were attached to which semesters.
+			This made the logic for adding a course to a semester simple: take the ID of the semester and the ID of the chosen course, then create a new record in the Courseattachments
+			table to hold the two IDs. If I'd understood Laravel better, I would have taken the extra step of making the two IDs a composite primary key for this table, instead of the
+			default auto-incrementing ID that every table is created with. As it stood, however, I just added a unique constraint so that a single course could never be added to the same
+			semester more than once.</p>
+			<div class="imgrowwrapper">
+				<div class="imgrow two">
+					<a href="img/evidence 1-a.png"><img src="img/evidence 1-a.png"></img></a>
+					<a href="img/evidence 1-b.png"><img src="img/evidence 1-b.png"></img></a>
+				</div>
+			</div>
+			<p>However, I made a pretty big mistake here. As I was creating the architecture to make this association work, I waffled between treating "Courseattachments" as two separate words and treating it as a single word, and because of this
+			I couldn't communicate the correct syntax to use when calling from this table to the other members of my group. This made things unnecessarily difficult for my
+			teammates to work on features related to this feature in the next sprint. To avoid creating a similar issue in future projects, I'll make sure to establish a proper
+			naming convention at the beginning of the project, and ensure that everyone (myself included) sticks to it.
+			</p>
+		</div>
+
+		<div class="section" id="Sprint6">
+			<h3>Sprint 6 - Final Pass</h3><a href="#">Back to top</a>
+			<p>In this sprint, we focused more on polishing existing features than adding entirely new ones. For the sake of staying Agile, we'd left these tickets for the last sprint, since they didn't add any pressing functionality on their own. Michael took the task of fully automating the core date table, Joe wrote seeders to make testing and displaying our other features less of a headache, and I finally got to finish off the main data-related pages, formatting the information they provided so that they were far more readable than the simple HTML table of before.
+			</p>
+			<p>We had a bit of trouble assigning the tickets for this sprint: this point is where we ran out of "simpler" Laravel to write, and all five of the major tickets we had left to assign had pretty high "velocity" scores. This made it hard to find a distribution of ticket assignments that suited each individual group member's ideal velocity. We eventually settled on giving our less confident group members a somewhat higher velocity than usual, with the proviso that they should ask the rest of us if they ran into a problem. Somewhat unfortunately, this ended with neither of those two tickets being completed at all.
+			</p>
+			<p>I'm not sure what the "fix" for this issue would be in a professional setting. I suppose a professional Agile process would never run out of tickets to work on, or be in a position where leaving tickets for the "end" of the project would make sense: the sixteen-week limit that this assignment had to be structured around would just not exist in a professional setting, since the whole Agile structure chafes against the very idea of a discrete "ending" to any project. The
+			closest thing would be deadlines for certain features, but even those are far more negotiable than the strict ending of a semester.
+			</p>
+		</div>
+		
+		<div class="section" id="Design">
+			<h3>Sprint 6 - Applied Design</h3><a href="#">Back to top</a>
+			<p>Initially, I found it quite difficult to get started on this sprint. My task was to rearrange and format our display/input pages, which allow users to view and add to the
+			information our application stores about assignments, the courses they belong to, and relevant dates for semesters. I had the very vague idea that I wanted it to look good, but besides that I wasn't
+			sure where to begin.</p>
+			<p>To get through this "developer's block", I decided to wipe out everything that we'd had before and work my way through each display from scratch, asking myself
+			what information I wanted to display (and where) as I came to it. While adding extra work isn't exactly Agile in a vacuum, in this context I was planning to totally
+			overhaul these pages anyway-- so clearing out the previous work just made it easier for me to think things through.</p> 
+			<p>I started with the individual assignments page, since assignments were the "smallest" unit that our application worked with. The first thing I wanted to know about
+			each assignment was its name, followed closely by the course it belonged to. In terms of formatting, I thought it made the most sense to have each assignment's name scan
+			as a "title", and its course scan as a "subtitle"-- the more important something is, the bigger and bolder it should be. The rest of the information (the start and due weeks)
+			I elected to put in the same box, since they fell under the same category of information. Finally, I left the delete button for the very bottom of each information box: if you're going to be allowed to
+			delete something, you should have to read all of its vitals first, in case it makes you change your mind or realise that you're looking at the wrong thing.
+			</p>
+			<div class="imgwrapper">
+				<a href="img/evidence 6-a.png"><img src="img/evidence 6-a.png"></img></a>
+			</div>
+			<p>I conceived of the display as discrete "boxes" as I started to add the assignment names/titles: it made sense to show the information like this because
+			it clearly separated each assignment from the others, and made it clear which "box" would be affected by which delete button. These lines of thought also guided me
+			through the course display (which was much simpler, as a course consisted only of a course name and course code) and the semester display (which was much more complex).
+			</p>
+			<div class="imgrowwrapper">
+				<div class="imgrow two">
+					<a href="img/evidence 6-b.png"><img src="img/evidence 6-b.png"></img></a>
+					<a href="img/evidence 6-c.png"><img src="img/evidence 6-c.png"></img></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section" id="Appendix">
+			<h3>Appendix: Agility Elsewhere</h3><a href="#Contents">Back to top</a>
+			<p>Although I didn't realise it until I first walked into Software Engineering, I've actually been familiar with
+			the output of Agile development processes since I turned fourteen. That was about when I started playing the free-to-play
+			game <a href="https://play.na.leagueoflegends.com/en_US">League of Legends</a>. Though it started out as a very low-budget
+			indie undertaking in 2009, scarcely more than a glorified Warcraft III mod, League soon rose to surprising prominence on a global
+			scale, swiftly outstripping competitors maintained by gaming giants Valve and Blizzard. Now that I've studied and been given
+			the chance to try implementing Agile development, I can recognise some of the key elements behind this resounding success.</p>
+			<p>First of all is their quick release schedule. Every two weeks, a new gameplay "patch" for the game is released, updating
+			in-game stats and sometimes changing entire mechanics to keep the game balanced and fresh. This is essentially the "sprint"
+			system of Agile development: development occurs over two-week spans, after which point the product is enhanced. This cycle is effective
+			for <em>League's</em> developers in particular because it allows them to respond quickly to in-game problems, such as one character being too
+			powerful, in much the same way that engineers with a specific client would have to respond to their client's changing requirements.</p>
+			<p>Next is their organisational structure. Most of the administrative people directing <em>League's</em> growth are, or started out as,
+			developers themselves. The organisation itself is run by Agile developers who understand intimately the work that needs to be
+			done to keep the game compelling and stable. This is practically Agile writ large: the engineers <em>are</em> the business people, so
+			their organisation and execution can stay responsive. Combined with their constant stream of patches, the result is a company that knows how to
+			shift gears on a dime.</p>
+			<p>Finally, this company's developers aren't afraid of releasing an "unfinished" product. By this I don't mean that they release features that don't work
+			at all-- rather, I mean they're unafraid of releasing very simple, imperfect features, which they then update over the next few patches. I think
+			that this philosophy of starting features small (but present), and then evolving them into more complete forms over time, is the most important thing 
+			that I kept in mind when we were discussing our ticket rosters at the beginning of each of our own sprints. Having been exposed to this cycle
+			earlier on in my life, even if I never heard the concepts referred to by name, really helped me understand what our priorities were supposed to be for this project.</p>
+		</div>
+	</div>
 </body>
 </html>
